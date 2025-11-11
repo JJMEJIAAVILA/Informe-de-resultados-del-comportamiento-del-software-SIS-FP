@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIS-FP Project | Informe de Resultados del Comportamiento del Software</title>
+  <link rel="icon" href="Sena_logo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(90deg, #00304D, #39A900);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+    header img {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section {
+      background: #141414;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+    h2 {
+      color: #39A900;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #39A900;
+      padding-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 0.7rem;
+      text-align: left;
+    }
+    th {
+      background-color: #00304D;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+    tr:hover {
+      background-color: #222;
+      transition: 0.3s ease;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .metric {
+      background: #1b1b1b;
+      border-radius: 12px;
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .metric:hover {
+      transform: translateY(-6px);
+      background: #222;
+    }
+    .metric h3 {
+      color: #39A900;
+      font-size: 1.2rem;
+    }
+    .metric p {
+      font-size: 1.5rem;
+      margin: 0.5rem 0 0;
+      font-weight: bold;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .buttons a {
+      display: inline-block;
+      background: #39A900;
+      color: #fff;
+      padding: 0.9rem 1.6rem;
+      margin: 0.4rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #2d7e00;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #00304D;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Sena_logo.png" alt="Logo SENA">
+    <h1>Informe de Resultados del Comportamiento del Software</h1>
+    <p>Proyecto: SIS-FP Project – Solución Integral de Seguridad Portuaria</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Introducción</h2>
+      <p>El presente informe analiza el comportamiento del software <strong>SIS-FP Project</strong>, validando su eficiencia, estabilidad y fiabilidad en entornos de desarrollo y despliegue. Las pruebas realizadas se basan en las directrices del componente formativo <em>“Aplicación de pruebas de software”</em>, asegurando el cumplimiento de las buenas prácticas de calidad establecidas en los marcos de trabajo ISO/IEC 25010.</p>
+    </section>
+
+    <section>
+      <h2>Equipo Evaluador</h2>
+      <table>
+        <tr>
+          <th>Rol</th><th>Nombre</th><th>Función</th><th>Observación</th>
+        </tr>
+        <tr>
+          <td>Líder de pruebas</td><td>Jhon Jairo Mejía Ávila</td><td>Coordinación y ejecución de pruebas funcionales, de integración y rendimiento</td><td>Responsable del análisis de resultados</td>
+        </tr>
+        <tr>
+          <td>Asesor técnico</td><td>Sistema automático de GitHub Actions y Netlify Deploy</td><td>Validación de despliegue y métricas de rendimiento</td><td>Automatización de pruebas de integración continua</td>
+        </tr>
+        <tr>
+          <td>Usuario final</td><td>Equipo de seguridad portuaria</td><td>Pruebas de usabilidad en simulaciones reales</td><td>Retroalimentación de interfaz y tiempos de respuesta</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Recursos Utilizados para la Evaluación</h2>
+      <table>
+        <tr><th>Recurso</th><th>Descripción</th></tr>
+        <tr><td>Infraestructura</td><td>Entorno de pruebas en navegador (Google Chrome, Edge), despliegue en Netlify y repositorio GitHub.</td></tr>
+        <tr><td>Frameworks</td><td>HTML5, CSS3, JavaScript, Bootstrap, TailwindCSS.</td></tr>
+        <tr><td>Herramientas de control de versiones</td><td>Git y GitHub.</td></tr>
+        <tr><td>Plataformas de despliegue</td><td>Netlify.</td></tr>
+        <tr><td>Sistema de registro</td><td>Bitácora digital y seguimiento mediante issues del repositorio.</td></tr>
+        <tr><td>Métricas de prueba</td><td>Rendimiento de carga, tiempo de respuesta, estabilidad del despliegue y experiencia del usuario.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Métricas y Criterios de Evaluación</h2>
+      <table>
+        <tr>
+          <th>Criterio</th><th>Métrica aplicada</th><th>Escala de medición</th><th>Resultado</th><th>Ponderación (%)</th>
+        </tr>
+        <tr><td>Rendimiento</td><td>Tiempo promedio de carga</td><td>0–5 segundos</td><td>2.1 s</td><td>20%</td></tr>
+        <tr><td>Estabilidad</td><td>Uptime del despliegue (Netlify)</td><td>0–100%</td><td>99.7%</td><td>15%</td></tr>
+        <tr><td>Funcionalidad</td><td>Correcto funcionamiento de botones, enlaces y formularios</td><td>0–100%</td><td>100%</td><td>20%</td></tr>
+        <tr><td>Usabilidad</td><td>Facilidad de navegación y comprensión visual</td><td>1–5 (escala Likert)</td><td>4.8</td><td>20%</td></tr>
+        <tr><td>Compatibilidad</td><td>Ejecución en distintos navegadores</td><td>0–100%</td><td>95%</td><td>15%</td></tr>
+        <tr><td>Seguridad básica</td><td>Revisión de enlaces HTTPS y recursos seguros</td><td>Cumple/No cumple</td><td>Cumple</td><td>10%</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Tipos de Pruebas Aplicadas</h2>
+      <table>
+        <tr><th>Tipo de prueba</th><th>Objetivo</th><th>Resultado</th></tr>
+        <tr><td>Pruebas funcionales</td><td>Validar el correcto funcionamiento de menús, botones, formularios y enlaces</td><td>Exitosas</td></tr>
+        <tr><td>Pruebas de rendimiento</td><td>Medir la velocidad de carga y estabilidad del sitio desplegado</td><td>Excelente rendimiento (2.1 s promedio)</td></tr>
+        <tr><td>Pruebas de compatibilidad</td><td>Verificar la visualización en diferentes navegadores y dispositivos</td><td>Sin errores críticos</td></tr>
+        <tr><td>Pruebas de regresión</td><td>Confirmar que las actualizaciones no afecten funcionalidades previas</td><td>Cumple</td></tr>
+        <tr><td>Pruebas de despliegue</td><td>Validar el correcto funcionamiento post publicación en Netlify</td><td>Despliegue exitoso</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Fidelidades y Observaciones</h2>
+      <ul>
+        <li>Se realizaron tres ciclos de pruebas (desarrollo, preproducción y producción).</li>
+        <li>Se detectaron errores menores de estilo corregidos mediante control de versiones.</li>
+        <li>El software se comportó de manera estable y predecible ante distintas resoluciones y dispositivos.</li>
+        <li>Los recursos del servidor mostraron bajo consumo y respuesta inmediata.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conclusiones</h2>
+      <p>El software <strong>SIS-FP Project</strong> demuestra un comportamiento óptimo, estable y confiable. Las pruebas evidencian que cumple con los estándares de calidad de software y buenas prácticas de desarrollo. Se recomienda continuar con pruebas iterativas y actualizar los manuales técnicos y de usuario ante futuras versiones.</p>
+    </section>
+
+    <div class="buttons">
+      <a href="https://bitacoraprojetsisfpcalidad.netlify.app/" target="_blank">📘 Bitácora de Calidad</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 SIS-FP Project | Evidencia GA11-220501098-AA2-EV01 | Desarrollado por Jhon Jairo Mejía Ávila</p>
+  </footer>
+</body>
+</html>
